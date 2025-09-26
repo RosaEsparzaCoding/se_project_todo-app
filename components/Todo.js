@@ -1,10 +1,9 @@
 class Todo {
-  constructor(data, selector, handleCheck, handleDelete) {
+  constructor(data, selector) {
     this._data = data;
     this._completed = data.completed;
+    this._completed = data.completed || false;
     this._templateElement = document.querySelector(selector);
-    this._handleCheck = handleCheck;
-    this._handleDelete = handleDelete;
   }
 
   _setEventListeners() {
@@ -32,6 +31,8 @@ class Todo {
 
   _toggleCompletion = () => {
     this._completed = !this._completed;
+    this._data.completed = this._completed;
+    this._todoCheckboxEl.checked = this._completed;
   };
 
   _remove = () => {
