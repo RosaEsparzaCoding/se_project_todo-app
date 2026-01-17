@@ -19,4 +19,4 @@ A short video of the todo app in action https://drive.google.com/file/d/1giQUrFr
 
 This project is deployed on GitHub Pages:
 
-- https://codepotato4life.github.io/se_project_todo-app/
+- https://rosaesparzacoding.github.io/se_project_todo-app/
